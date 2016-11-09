@@ -18,7 +18,7 @@ RUN apt-get update \
   && mv bin/libHalide.so /usr/lib/x86_64-linux-gnu/ \
   && mkdir /usr/include/halide && mv distrib/include/* /usr/include/halide \
   && mv distrib/tools/*.h /usr/include/halide/ \
-  && rm -rf /root/build
+  && rm -rf /root/build \
   && apt-get clean 
 
 WORKDIR /home/halide
