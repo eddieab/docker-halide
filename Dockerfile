@@ -24,7 +24,7 @@ RUN apt-get update \
   && cmake -G Ninja -DCMAKE_BUILD_TYPE=Release -S . -B cmake-build-release \
   && cmake --build ./cmake-build-release \
   && cmake --install ./cmake-build-release \
-  && rm -rf /roo/build \
+  && rm -rf /root/build \
   && apt-get clean 
 
 WORKDIR /root
