@@ -1,6 +1,6 @@
-FROM silkeh/clang:11
+FROM silkeh/clang:14
 
-ENV HALIDE_VERSION 12.0.1
+ENV HALIDE_VERSION 14.0.0
 
 RUN apt-get update \
   && apt-get install -y make g++ libjpeg-dev libpng-dev libz-dev \
